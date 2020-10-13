@@ -8,6 +8,8 @@ const port = process.env.PORT || 3001;
 app.use("/", router);
 app.use(express.static(__dirname + '/navBar'));
 
+/* testing code*/
+
 router.get('/dataaa', function (req, res, next) {
     console.log("app on default");
     res.write( "default call" );  
